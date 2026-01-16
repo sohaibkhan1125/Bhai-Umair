@@ -189,9 +189,7 @@ export default function JsonValidatorPage() {
         </Card>
       </main>
 
-<<<<<<< HEAD
-=======
-      {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
       <article className="mt-8 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold">Understanding JSON Validation</h2>
         <p>
@@ -253,8 +251,7 @@ export default function JsonValidatorPage() {
         </p>
       </article>
 
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      <Footer />
+<Footer />
     </div>
   );
 }

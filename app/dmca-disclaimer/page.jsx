@@ -82,10 +82,7 @@ const DmcaDisclaimerGenerator = () => {
                         </div>
                     )}
                 </div>
-<<<<<<< HEAD
-=======
-
-                {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
                 <article className="mt-8 max-w-4xl mx-auto px-4">
                     <h2 className="text-2xl font-bold">Understanding DMCA Disclaimers</h2>
                     <p>
@@ -152,8 +149,7 @@ const DmcaDisclaimerGenerator = () => {
                         your DMCA disclaimer today and ensure your website is legally protected!
                     </p>
                 </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-            </main>
+</main>
             <Footer />
         </div>
     );

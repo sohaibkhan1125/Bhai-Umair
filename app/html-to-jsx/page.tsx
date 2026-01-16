@@ -81,63 +81,7 @@ export default function HtmlToJsxPage() {
 
   return (
     <section>
-<<<<<<< HEAD
-      <Navbar/>
-    <div className="container mx-auto p-4">
-      <Card className="w-full max-w-4xl mx-auto">
-        <CardHeader>
-          <CardTitle className="text-2xl font-bold text-center">HTML to JSX Converter</CardTitle>
-        </CardHeader>
-        <CardContent>
-          <div className="space-y-4">
-            <div className="space-y-2">
-              <Label htmlFor="html">HTML Input</Label>
-              <Textarea
-                id="html"
-                placeholder="Enter your HTML here..."
-                value={html}
-                onChange={(e) => setHtml(e.target.value)}
-                className="min-h-[200px] font-mono"
-              />
-            </div>
-
-            <div className="flex justify-center space-x-4">
-              <Button onClick={handleConvert} className="w-32">
-                Convert
-              </Button>
-              <Button onClick={handleClear} variant="outline" className="w-32">
-                <RefreshCw className="w-4 h-4 mr-2" />
-                Clear
-              </Button>
-            </div>
-
-            <div className="space-y-2">
-              <div className="flex justify-between items-center">
-                <Label htmlFor="jsx">JSX Output</Label>
-                <Button
-                  variant="ghost"
-                  size="sm"
-                  onClick={handleCopy}
-                  className="h-8 px-2"
-                >
-                  <Copy className="w-4 h-4 mr-2" />
-                  Copy
-                </Button>
-              </div>
-              <Textarea
-                id="jsx"
-                value={jsx}
-                readOnly
-                className="min-h-[200px] font-mono bg-muted"
-              />
-            </div>
-          </div>
-        </CardContent>
-      </Card>
-    </div>
-    <Footer/>
-=======
-      <Navbar />
+<Navbar />
       <div className="container mx-auto p-4">
         <Card className="w-full max-w-4xl mx-auto">
           <CardHeader>
@@ -240,7 +184,6 @@ export default function HtmlToJsxPage() {
         </p>
       </article>
       <Footer />
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-    </section>
+</section>
   );
 } 

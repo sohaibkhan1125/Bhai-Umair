@@ -121,10 +121,7 @@ const FlexboxGenerator = () => {
                     </div>
                 </div>
             </main>
-<<<<<<< HEAD
-=======
-
-            {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
             <article className="mt-8 max-w-4xl mx-auto px-4">
                 <h2 className="text-2xl font-bold">Understanding Flexbox: A Comprehensive Guide</h2>
                 <p>
@@ -183,8 +180,7 @@ const FlexboxGenerator = () => {
                     and improve user experience. Start experimenting with Flexbox today and see how it can transform your layouts!
                 </p>
             </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-            <Footer />
+<Footer />
         </div>
     );
 };

@@ -70,12 +70,8 @@ const BarcodeGenerator = () => {
       <Navbar />
       
       <main className="container mx-auto px-4 py-8">
-<<<<<<< HEAD
-        <div className=" mx-auto">
-=======
-        <div className="mx-auto">
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-          <div className="bg-white p-6 rounded-lg shadow-lg w-full">
+<div className="mx-auto">
+<div className="bg-white p-6 rounded-lg shadow-lg w-full">
             <h1 className="text-3xl font-bold mb-8 text-center text-gray-800">
               Barcode Generator
             </h1>
@@ -139,10 +135,7 @@ const BarcodeGenerator = () => {
               <li>Click the "Download Barcode" button to save it as a PNG image</li>
             </ol>
           </div>
-<<<<<<< HEAD
-=======
-
-          {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
           <article className="mt-8 max-w-4xl mx-auto px-4">
             <h2 className="text-2xl font-bold">Understanding Barcode Technology</h2>
             <p>
@@ -200,8 +193,7 @@ const BarcodeGenerator = () => {
               barcodes today and take advantage of the benefits they offer!
             </p>
           </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-        </div>
+</div>
       </main>
 
       <Footer />

@@ -29,105 +29,19 @@ export default function JavaScriptMinifierPage() {
       // Remove unnecessary whitespace
       minified = minified
         // Remove whitespace around operators
-<<<<<<< HEAD
-        .replace(/\s*([+\-*/%&|^=<>!])\s*/g, '$1')
-=======
-        .replace(/\s*([+\-*/%=&|^<>!])\s*/g, '$1')
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-        // Remove whitespace around parentheses and brackets
+.replace(/\s*([+\-*/%=&|^<>!])\s*/g, '$1')
+// Remove whitespace around parentheses and brackets
         .replace(/\s*([()\[\]{}])\s*/g, '$1')
         // Remove whitespace around commas and semicolons
         .replace(/\s*([,;])\s*/g, '$1')
-<<<<<<< HEAD
-        // Remove whitespace around dots
-        .replace(/\s*\.\s*/g, '.')
-        // Remove multiple spaces
-        .replace(/\s+/g, ' ')
-        // Remove spaces at the start and end of lines
-        .replace(/^\s+|\s+$/gm, '')
-        // Remove empty lines
-        .replace(/\n\s*\n/g, '\n')
-        // Remove trailing whitespace
-        .replace(/\s+$/g, '')
-        // Remove leading/trailing whitespace
-        .trim();
-
-      // Handle special cases
-      minified = minified
-        // Add space after keywords
-        .replace(/\b(if|else|for|while|do|switch|case|return|break|continue|throw|try|catch|finally|new|delete|typeof|instanceof|in|of)\b/g, ' $1 ')
-        // Add space after function keyword
-        .replace(/\bfunction\b/g, 'function ')
-        // Add space after var/let/const
-        .replace(/\b(var|let|const)\b/g, '$1 ')
-        // Remove spaces around dots in numbers
-        .replace(/(\d)\s*\.\s*(\d)/g, '$1.$2')
-        // Remove spaces in function calls
-        .replace(/\s*\(\s*/g, '(')
-        .replace(/\s*\)\s*/g, ')')
-        // Remove spaces in array access
-        .replace(/\s*\[\s*/g, '[')
-        .replace(/\s*\]\s*/g, ']')
-        // Remove spaces in object literals
-        .replace(/\s*{\s*/g, '{')
-        .replace(/\s*}\s*/g, '}')
-        // Remove spaces around colons in objects
-        .replace(/\s*:\s*/g, ':')
-        // Remove spaces around arrow functions
-        .replace(/\s*=>\s*/g, '=>')
-        // Remove spaces around template literals
-        .replace(/\s*`\s*/g, '`')
-        // Remove spaces around spread operator
-        .replace(/\s*\.\.\.\s*/g, '...')
-        // Remove spaces around optional chaining
-        .replace(/\s*\?\.\s*/g, '?.')
-        // Remove spaces around nullish coalescing
-        .replace(/\s*\?\?\s*/g, '??')
-        // Remove spaces around logical operators
-        .replace(/\s*&&\s*/g, '&&')
-        .replace(/\s*\|\|\s*/g, '||')
-        // Remove spaces around comparison operators
-        .replace(/\s*==\s*/g, '==')
-        .replace(/\s*===\s*/g, '===')
-        .replace(/\s*!=\s*/g, '!=')
-        .replace(/\s*!==\s*/g, '!==')
-        .replace(/\s*<=\s*/g, '<=')
-        .replace(/\s*>=\s*/g, '>=')
-        // Remove spaces around assignment operators
-        .replace(/\s*=\s*/g, '=')
-        .replace(/\s*\+=\s*/g, '+=')
-        .replace(/\s*-=\s*/g, '-=')
-        .replace(/\s*\*=\s*/g, '*=')
-        .replace(/\s*\/=\s*/g, '/=')
-        .replace(/\s*%=\s*/g, '%=')
-        .replace(/\s*&=\s*/g, '&=')
-        .replace(/\s*\|=\s*/g, '|=')
-        .replace(/\s*\^=\s*/g, '^=')
-        .replace(/\s*<<=\s*/g, '<<=')
-        .replace(/\s*>>=\s*/g, '>>=')
-        .replace(/\s*>>>=\s*/g, '>>>=')
-        // Remove spaces around increment/decrement
-        .replace(/\s*\+\+\s*/g, '++')
-        .replace(/\s*--\s*/g, '--')
-        // Remove spaces around bitwise operators
-        .replace(/\s*&\s*/g, '&')
-        .replace(/\s*\|\s*/g, '|')
-        .replace(/\s*\^\s*/g, '^')
-        .replace(/\s*~\s*/g, '~')
-        .replace(/\s*<<\s*/g, '<<')
-        .replace(/\s*>>\s*/g, '>>')
-        .replace(/\s*>>>\s*/g, '>>>');
-
-=======
-        // Remove multiple spaces
+// Remove multiple spaces
         .replace(/\s+/g, ' ')
         // Remove empty lines
         .replace(/\n\s*\n/g, '\n')
         // Trim whitespace
         .trim();
 
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      return minified;
+return minified;
     } catch (error) {
       console.error('Minification error:', error);
       return `Error minifying JavaScript: ${error.message}`;
@@ -259,11 +173,7 @@ export default function JavaScriptMinifierPage() {
         </Card>
       </main>
 
-<<<<<<< HEAD
-=======
-     
-
-      {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
       <article className="mt-8 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold">Understanding JavaScript Minification</h2>
         <p>
@@ -322,8 +232,7 @@ export default function JavaScriptMinifierPage() {
           experience the benefits of faster load times and improved user experience!
         </p>
       </article> 
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      <Footer />
+<Footer />
     </div>
   );
 }

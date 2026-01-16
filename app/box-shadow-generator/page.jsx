@@ -108,10 +108,7 @@ const BoxShadowGenerator = () => {
             </div>
           )}
         </div>
-<<<<<<< HEAD
-=======
-
-        {/* Instructions */}
+{/* Instructions */}
         <div className="mt-8 bg-white p-6 rounded-lg shadow-lg">
           <h2 className="text-xl font-semibold mb-4">How to Use</h2>
           <ol className="list-decimal list-inside space-y-2 text-gray-700">
@@ -189,8 +186,7 @@ const BoxShadowGenerator = () => {
             box shadows today and elevate your web design to the next level!
           </p>
         </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      </main>
+</main>
       <Footer />
     </div>
   );

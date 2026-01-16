@@ -11,11 +11,7 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
-<<<<<<< HEAD
-=======
 import { useEffect } from 'react';
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-
 export default function SqlFormatterPage() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
@@ -225,9 +221,7 @@ export default function SqlFormatterPage() {
         </Card>
       </main>
 
-<<<<<<< HEAD
-=======
-      {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
       <article className="mt-8 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold">Understanding SQL Formatting</h2>
         <p>
@@ -292,8 +286,7 @@ export default function SqlFormatterPage() {
         </p>
       </article>
 
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      <Footer />
+<Footer />
     </div>
   );
 }

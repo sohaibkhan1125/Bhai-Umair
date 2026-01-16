@@ -181,11 +181,7 @@ export default function JavaScriptFormatterPage() {
         </Card>
       </main>
 
-<<<<<<< HEAD
-=======
-      
-
-      {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
       <article className="mt-8 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold">Understanding JavaScript Formatting</h2>
         <p>
@@ -234,8 +230,7 @@ export default function JavaScriptFormatterPage() {
           JavaScript formatting is a vital practice for developers to ensure clean, readable, and maintainable code. By using our JavaScript Formatter tool, you can easily format your code and improve its overall quality. Start formatting your JavaScript today and experience the benefits of clean code!
         </p>
       </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      <Footer />
+<Footer />
     </div>
   );
 }

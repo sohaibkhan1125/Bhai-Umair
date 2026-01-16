@@ -122,10 +122,7 @@ const ImageCropper = () => {
           <canvas ref={canvasRef} style={{ display: 'none' }} />
         </div>
       </main>
-<<<<<<< HEAD
-=======
-
-      {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
       <article className="mt-8 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold">Understanding Image Cropping</h2>
         <p>
@@ -174,8 +171,7 @@ const ImageCropper = () => {
           Image cropping is an essential skill for anyone working with digital images. By using our Image Cropper tool, you can easily enhance your images, improve their composition, and optimize them for various platforms. Start cropping your images today and unlock their full potential!
         </p>
       </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      <Footer />
+<Footer />
     </div>
   );
 };

@@ -53,10 +53,7 @@ const BrowserCapabilityChecker = () => {
             </div>
           )}
         </div>
-<<<<<<< HEAD
-=======
-
-        {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
         <article className="mt-8 max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold">Understanding Browser Capabilities</h2>
           <p>
@@ -123,8 +120,7 @@ const BrowserCapabilityChecker = () => {
             browser capabilities today and enhance your web development process!
           </p>
         </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      </main>
+</main>
       <Footer />
     </div>
   );

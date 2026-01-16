@@ -10,91 +10,6 @@ import { toast } from "sonner";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 
-<<<<<<< HEAD
-export default function CaseConverterPage() {
-  const [input, setInput] = useState('');
-  const [output, setOutput] = useState('');
-  const [selectedCase, setSelectedCase] = useState('sentence');
-
-  const convertCase = (text, caseType) => {
-    if (!text.trim()) return '';
-
-    switch (caseType) {
-      case 'uppercase':
-        return text.toUpperCase();
-      
-      case 'lowercase':
-        return text.toLowerCase();
-      
-      case 'capitalize':
-        return text
-          .split(' ')
-          .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
-          .join(' ');
-      
-      case 'sentence':
-        return text
-          .split('. ')
-          .map(sentence => sentence.charAt(0).toUpperCase() + sentence.slice(1).toLowerCase())
-          .join('. ');
-      
-      case 'camelCase':
-        return text
-          .toLowerCase()
-          .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase())
-          .replace(/^[A-Z]/, c => c.toLowerCase());
-      
-      case 'PascalCase':
-        return text
-          .toLowerCase()
-          .replace(/[^a-zA-Z0-9]+(.)/g, (m, chr) => chr.toUpperCase())
-          .replace(/^[a-z]/, c => c.toUpperCase());
-      
-      case 'snake_case':
-        return text
-          .toLowerCase()
-          .replace(/[^a-zA-Z0-9]+/g, '_')
-          .replace(/^_+|_+$/g, '');
-      
-      case 'kebab-case':
-        return text
-          .toLowerCase()
-          .replace(/[^a-zA-Z0-9]+/g, '-')
-          .replace(/^-+|-+$/g, '');
-      
-      case 'dot.case':
-        return text
-          .toLowerCase()
-          .replace(/[^a-zA-Z0-9]+/g, '.')
-          .replace(/^\.+|\.+$/g, '');
-      
-      case 'CONSTANT_CASE':
-        return text
-          .toUpperCase()
-          .replace(/[^A-Z0-9]+/g, '_')
-          .replace(/^_+|_+$/g, '');
-      
-      case 'Title Case':
-        return text
-          .toLowerCase()
-          .replace(/(?:^|\s|'|")\S/g, char => char.toUpperCase());
-      
-      case 'aNtIcAsE':
-        return text
-          .split('')
-          .map((char, i) => i % 2 === 0 ? char.toLowerCase() : char.toUpperCase())
-          .join('');
-      
-      case 'InVeRsE cAsE':
-        return text
-          .split('')
-          .map(char => char === char.toUpperCase() ? char.toLowerCase() : char.toUpperCase())
-          .join('');
-      
-      default:
-        return text;
-    }
-=======
 export default function NumberBaseConverterPage() {
   const [input, setInput] = useState('');
   const [output, setOutput] = useState('');
@@ -110,36 +25,22 @@ export default function NumberBaseConverterPage() {
 
     // Convert from decimal to the target base
     return decimal.toString(toBase).toUpperCase();
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-  };
+};
 
   const handleConvert = () => {
     if (!input.trim()) {
-<<<<<<< HEAD
-      toast.error('Please enter some text');
-      return;
-    }
-    const converted = convertCase(input, selectedCase);
-    setOutput(converted);
-    toast.success('Text converted successfully!');
-=======
-      toast.error('Please enter a number');
+toast.error('Please enter a number');
       return;
     }
     const converted = convertBase(input, baseFrom, baseTo);
     setOutput(converted);
     toast.success('Number converted successfully!');
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-  };
+};
 
   const handleCopy = () => {
     navigator.clipboard.writeText(output);
-<<<<<<< HEAD
-    toast.success('Converted text copied to clipboard!');
-=======
-    toast.success('Converted number copied to clipboard!');
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-  };
+toast.success('Converted number copied to clipboard!');
+};
 
   const handleClear = () => {
     setInput('');
@@ -157,64 +58,24 @@ export default function NumberBaseConverterPage() {
     a.click();
     document.body.removeChild(a);
     URL.revokeObjectURL(url);
-<<<<<<< HEAD
-    toast.success('Converted text downloaded!');
+toast.success('Converted number downloaded!');
   };
 
-  const caseTypes = [
-    { value: 'uppercase', label: 'UPPERCASE' },
-    { value: 'lowercase', label: 'lowercase' },
-    { value: 'capitalize', label: 'Capitalize' },
-    { value: 'sentence', label: 'Sentence case' },
-    { value: 'camelCase', label: 'camelCase' },
-    { value: 'PascalCase', label: 'PascalCase' },
-    { value: 'snake_case', label: 'snake_case' },
-    { value: 'kebab-case', label: 'kebab-case' },
-    { value: 'dot.case', label: 'dot.case' },
-    { value: 'CONSTANT_CASE', label: 'CONSTANT_CASE' },
-    { value: 'Title Case', label: 'Title Case' },
-    { value: 'aNtIcAsE', label: 'aNtIcAsE' },
-    { value: 'InVeRsE cAsE', label: 'InVeRsE cAsE' }
-  ];
-
-=======
-    toast.success('Converted number downloaded!');
-  };
-
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-  return (
+return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
       
       <main className="flex-grow container mx-auto p-4">
         <Card className="w-full max-w-4xl mx-auto">
           <CardHeader>
-<<<<<<< HEAD
-            <CardTitle className="text-2xl font-bold text-center">Case Converter</CardTitle>
-=======
-            <CardTitle className="text-2xl font-bold text-center">Number Base Converter</CardTitle>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-          </CardHeader>
+<CardTitle className="text-2xl font-bold text-center">Number Base Converter</CardTitle>
+</CardHeader>
           <CardContent>
             <div className="space-y-6">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-<<<<<<< HEAD
-                    <Label>Input Text</Label>
-                    <select
-                      value={selectedCase}
-                      onChange={(e) => setSelectedCase(e.target.value)}
-                      className="px-3 py-1 border rounded-md bg-background"
-                    >
-                      {caseTypes.map(type => (
-                        <option key={type.value} value={type.value}>
-                          {type.label}
-                        </option>
-                      ))}
-                    </select>
-=======
-                    <Label>Input Number</Label>
+<Label>Input Number</Label>
                     <div className="flex space-x-2">
                       <select
                         value={baseFrom}
@@ -238,28 +99,19 @@ export default function NumberBaseConverterPage() {
                         <option value={16}>Hexadecimal (Base 16)</option>
                       </select>
                     </div>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-                  </div>
+</div>
                   <Textarea
                     value={input}
                     onChange={(e) => setInput(e.target.value)}
-<<<<<<< HEAD
-                    placeholder="Enter your text here..."
-=======
-                    placeholder="Enter your number here..."
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-                    className="min-h-[300px]"
+placeholder="Enter your number here..."
+className="min-h-[300px]"
                   />
                 </div>
 
                 <div className="space-y-4">
                   <div className="flex justify-between items-center">
-<<<<<<< HEAD
-                    <Label>Converted Text</Label>
-=======
-                    <Label>Converted Number</Label>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-                    <div className="flex space-x-2">
+<Label>Converted Number</Label>
+<div className="flex space-x-2">
                       <Button
                         variant="ghost"
                         size="sm"
@@ -299,20 +151,12 @@ export default function NumberBaseConverterPage() {
               </div>
 
               <div className="mt-8 p-4 bg-muted rounded-lg">
-<<<<<<< HEAD
-                <h3 className="font-semibold text-lg mb-2">Case Conversion Tips</h3>
-                <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Select the desired case style from the dropdown menu</li>
-                  <li>Paste or type your text in the input field</li>
-                  <li>Click Convert to transform the text</li>
-=======
-                <h3 className="font-semibold text-lg mb-2">Number Conversion Tips</h3>
+<h3 className="font-semibold text-lg mb-2">Number Conversion Tips</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
                   <li>Select the base of the input number and the desired output base</li>
                   <li>Paste or type your number in the input field</li>
                   <li>Click Convert to transform the number</li>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-                  <li>Use Copy or Download to save the result</li>
+<li>Use Copy or Download to save the result</li>
                   <li>Clear the form to start over</li>
                 </ul>
               </div>
@@ -321,9 +165,7 @@ export default function NumberBaseConverterPage() {
         </Card>
       </main>
 
-<<<<<<< HEAD
-=======
-      {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
       <article className="mt-8 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold">Understanding Number Base Conversion</h2>
         <p>
@@ -384,8 +226,7 @@ export default function NumberBaseConverterPage() {
         </p>
       </article>
 
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      <Footer />
+<Footer />
     </div>
   );
 }

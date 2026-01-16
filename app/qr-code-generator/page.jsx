@@ -287,29 +287,19 @@ export default function QRCodeGeneratorPage() {
               <div className="mt-8 p-4 bg-muted rounded-lg">
                 <h3 className="font-semibold text-lg mb-2">About QR Codes</h3>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-<<<<<<< HEAD
-                  <li>QR codes can store various types of data including text, URLs, contact information, and more</li>
-                  <li>Higher error correction levels allow the QR code to remain readable even if damaged</li>
-                  <li>QR codes can be scanned using most smartphone cameras</li>
-                  <li>The size and colors of QR codes can be customized while maintaining readability</li>
-                  <li>QR codes are widely used for marketing, payments, and information sharing</li>
-=======
-                  <li>QR codes can store various types of data including text, URLs, contact information, and more.</li>
+<li>QR codes can store various types of data including text, URLs, contact information, and more.</li>
                   <li>Higher error correction levels allow the QR code to remain readable even if damaged.</li>
                   <li>QR codes can be scanned using most smartphone cameras.</li>
                   <li>The size and colors of QR codes can be customized while maintaining readability.</li>
                   <li>QR codes are widely used for marketing, payments, and information sharing.</li>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-                </ul>
+</ul>
               </div>
             </div>
           </CardContent>
         </Card>
       </main>
 
-<<<<<<< HEAD
-=======
-      {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
       <article className="mt-8 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold">Understanding QR Codes</h2>
         <p>
@@ -362,8 +352,7 @@ export default function QRCodeGeneratorPage() {
         </p>
       </article>
 
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      <Footer />
+<Footer />
     </div>
   );
 }

@@ -66,10 +66,7 @@ const ImageToBase64Converter = () => {
           )}
         </div>
       </main>
-<<<<<<< HEAD
-=======
-
-      {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
       <article className="mt-8 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold">Understanding Image to Base64 Conversion</h2>
         <p>
@@ -128,8 +125,7 @@ const ImageToBase64Converter = () => {
           Converting images to Base64 format is a valuable technique for web developers and designers. By using our Image to Base64 Converter tool, you can easily convert images for use in web applications, emails, and other text-based formats. Start converting your images today and take advantage of the benefits of Base64 encoding!
         </p>
       </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      <Footer />
+<Footer />
     </div>
   );
 };

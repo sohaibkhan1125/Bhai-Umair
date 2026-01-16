@@ -34,12 +34,8 @@ const AmpValidation = () => {
         <div className="min-h-screen bg-gray-100">
             <Navbar />
             <div className="container mx-auto p-6">
-<<<<<<< HEAD
-                <div className=" mx-auto bg-white rounded-lg shadow-lg p-8">
-=======
-                <div className="mx-auto bg-white rounded-lg shadow-lg p-8">
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-                    <h1 className="text-3xl font-bold text-center text-blue-600 mb-8">
+<div className="mx-auto bg-white rounded-lg shadow-lg p-8">
+<h1 className="text-3xl font-bold text-center text-blue-600 mb-8">
                         AMP Validator Tool
                     </h1>
 
@@ -88,21 +84,7 @@ const AmpValidation = () => {
                         </div>
                     )}
 
-<<<<<<< HEAD
-                    {/* Additional Information Section */}
-                    <div className="mt-8 p-6 bg-gray-50 rounded-md">
-                        <h2 className="text-xl font-semibold mb-4 text-gray-800">
-                            What is AMP Validation?
-                        </h2>
-                        <p className="text-gray-600 leading-relaxed">
-                            AMP (Accelerated Mobile Pages) validation ensures your web pages 
-                            comply with AMP specifications for faster mobile loading. Valid AMP 
-                            pages can be cached by Google and other platforms, potentially 
-                            improving search visibility and user experience.
-                        </p>
-                    </div>
-=======
-                    {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
                     <article className="mt-8 max-w-4xl mx-auto px-4">
                         <h2 className="text-2xl font-bold">Understanding AMP Validation</h2>
                         <p>
@@ -154,8 +136,7 @@ const AmpValidation = () => {
                             helping you stay competitive in the digital landscape.
                         </p>
                     </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-                </div>
+</div>
             </div>
             <Footer />
         </div>

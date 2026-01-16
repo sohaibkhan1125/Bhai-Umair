@@ -155,11 +155,7 @@ Aspect Ratio: ${screenInfo.aspectRatio}`;
         </Card>
       </main>
 
-<<<<<<< HEAD
-      <Footer />
-=======
-      
-      {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
       <article className="mt-8 max-w-4xl mx-auto px-4">
         <h2 className="text-2xl font-bold">Understanding Screen Resolution</h2>
         <p>
@@ -217,7 +213,6 @@ Aspect Ratio: ${screenInfo.aspectRatio}`;
       </article>
       <Footer />
 
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-    </div>
+</div>
   );
 }

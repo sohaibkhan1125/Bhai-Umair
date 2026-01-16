@@ -147,10 +147,7 @@ export default function WordCounter() {
             </div>
           </div>
         </div>
-<<<<<<< HEAD
-=======
-
-        {/* New SEO Optimized Article Section */}
+{/* New SEO Optimized Article Section */}
         <article className="mt-8 max-w-4xl mx-auto px-4">
           <h2 className="text-2xl font-bold">Understanding Word Counting</h2>
           <p>
@@ -201,8 +198,7 @@ export default function WordCounter() {
             Word counting is a vital skill for anyone involved in writing or editing. By using our Word Counter tool, you can easily keep track of your word count and other important statistics, helping you to improve your writing and meet your goals. Start using our Word Counter today and enhance your writing process!
           </p>
         </article>
->>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
-      </main>
+</main>
 
       <Footer />
     </div>
