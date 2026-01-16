@@ -11,6 +11,10 @@ import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { vscDarkPlus } from 'react-syntax-highlighter/dist/esm/styles/prism';
+<<<<<<< HEAD
+=======
+import { useEffect } from 'react';
+>>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
 
 export default function SqlFormatterPage() {
   const [input, setInput] = useState('');
@@ -221,6 +225,74 @@ export default function SqlFormatterPage() {
         </Card>
       </main>
 
+<<<<<<< HEAD
+=======
+      {/* New SEO Optimized Article Section */}
+      <article className="mt-8 max-w-4xl mx-auto px-4">
+        <h2 className="text-2xl font-bold">Understanding SQL Formatting</h2>
+        <p>
+          SQL (Structured Query Language) is the standard language used to communicate with databases. 
+          Writing clean and well-structured SQL queries is essential for maintaining readability, 
+          performance, and efficiency in database management. In this article, we will explore the importance of SQL formatting, 
+          best practices for writing SQL queries, and how to use SQL formatting tools effectively.
+        </p>
+        
+        <h3 className="text-xl font-semibold">Why is SQL Formatting Important?</h3>
+        <p>
+          Proper SQL formatting enhances the readability of your queries, making it easier for developers and database administrators 
+          to understand and maintain the code. Here are some key reasons why SQL formatting is crucial:
+        </p>
+        <ul className="list-disc list-inside">
+          <li><strong>Improved Readability:</strong> Well-formatted SQL queries are easier to read and comprehend, reducing the likelihood of errors.</li>
+          <li><strong>Collaboration:</strong> In team environments, clear formatting helps team members understand each other's work, facilitating collaboration.</li>
+          <li><strong>Debugging:</strong> When issues arise, formatted SQL queries make it easier to identify problems and debug code.</li>
+          <li><strong>Performance:</strong> While formatting itself does not directly impact performance, well-structured queries can lead to better execution plans.</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold">Best Practices for Writing SQL Queries</h3>
+        <p>
+          Following best practices when writing SQL queries can significantly improve their quality. Here are some tips to consider:
+        </p>
+        <ol className="list-decimal list-inside">
+          <li><strong>Use Consistent Indentation:</strong> Indentation helps to visually separate different parts of the query, making it easier to follow the logic.</li>
+          <li><strong>Capitalize SQL Keywords:</strong> Capitalizing keywords (e.g., SELECT, FROM, WHERE) helps them stand out and improves readability.</li>
+          <li><strong>Break Long Queries into Multiple Lines:</strong> If a query is too long, break it into multiple lines to avoid horizontal scrolling.</li>
+          <li><strong>Comment Your Code:</strong> Use comments to explain complex logic or important decisions within your queries.</li>
+          <li><strong>Use Aliases Wisely:</strong> When using table or column aliases, ensure they are meaningful and enhance clarity.</li>
+        </ol>
+
+        <h3 className="text-xl font-semibold">Common SQL Formatting Techniques</h3>
+        <p>
+          Here are some common techniques used in SQL formatting:
+        </p>
+        <ul className="list-disc list-inside">
+          <li><strong>Newlines Before Keywords:</strong> Adding newlines before major SQL keywords (e.g., SELECT, FROM, WHERE) helps to visually separate different clauses.</li>
+          <li><strong>Indentation for Nested Queries:</strong> Indent nested queries to show their relationship to the main query.</li>
+          <li><strong>Consistent Use of Spaces:</strong> Use spaces around operators (e.g., =, &lt;, &gt;) to improve readability.</li>
+          <li><strong>Properly Format Lists:</strong> When using lists (e.g., in SELECT statements), ensure each item is on a new line for clarity.</li>
+        </ul>
+
+        <h3 className="text-xl font-semibold">Using SQL Formatting Tools</h3>
+        <p>
+          SQL formatting tools, like the one provided in this application, can automate the process of formatting SQL queries. 
+          These tools can save time and ensure consistency across your SQL code. Here's how to effectively use SQL formatting tools:
+        </p>
+        <ol className="list-decimal list-inside">
+          <li><strong>Input Your SQL Query:</strong> Paste your SQL query into the input area of the formatter.</li>
+          <li><strong>Select Formatting Options:</strong> Choose options such as indentation size and whether to capitalize keywords.</li>
+          <li><strong>Format the Query:</strong> Click the format button to apply the formatting rules.</li>
+          <li><strong>Review the Output:</strong> Check the formatted SQL in the output area and make any necessary adjustments.</li>
+        </ol>
+
+        <h3 className="text-xl font-semibold">Conclusion</h3>
+        <p>
+          SQL formatting is an essential skill for anyone working with databases. By following best practices and utilizing formatting tools, 
+          you can write cleaner, more efficient SQL queries that are easier to read and maintain. Start implementing these techniques today 
+          to enhance your SQL coding practices and improve collaboration with your team.
+        </p>
+      </article>
+
+>>>>>>> e1b9a478fec9fa78d7a5775f71e2cbf195ef2ba5
       <Footer />
     </div>
   );
