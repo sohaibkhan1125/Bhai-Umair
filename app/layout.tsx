@@ -15,6 +15,9 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Web Craft Kit - 80+ Free Online Web Development & SEO Tools",
   description: "Access a comprehensive collection of free web development, SEO, and productivity tools. Including calculators, generators, and converters for developers.",
+  verification: {
+    google: "IhhH0LLgsv2bk_lrzwi3OFHGqYXIm6TGxm2oyfPe5ls",
+  },
 };
 
 export default function RootLayout({
